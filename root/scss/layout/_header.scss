@@ -1,0 +1,41 @@
+.header {
+    height: 43.4rem;
+    position: relative;
+
+    & .img {
+        display: inline-block;
+        position: absolute;
+        right: -39%;
+        top: 54%;
+        transform: translateY(-50%);
+        width: 135%;
+    }
+}
+
+.navigation {
+    @extend .add-padding;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    & .logo {
+        width: 7%;        
+    }
+
+    & .nav-icon {
+        width: 8%;
+    }
+
+    & .links-container {
+        display: none;
+        position: absolute;
+    
+        & .links-items {
+            
+            & .item {
+    
+            }
+        }
+    }
+}

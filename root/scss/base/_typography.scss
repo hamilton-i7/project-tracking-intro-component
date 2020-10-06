@@ -1,5 +1,42 @@
 body {
     font-family: $font-body;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
+}
+
+.heading {
+    font-family: $font-title;
+    text-transform: uppercase;
+    
+    &-primary {
+        @extend .heading;
+        font-size: 3.8em;
+        line-height: 1;
+    }
+
+    &-secondary,
+    &-tertiary {
+        @extend .heading;
+        font-size: 1.6em;
+        font-weight: 400;
+    }
+    
+    &-secondary {
+        font-size: 1.6em;
+        letter-spacing: .3em;
+
+        & span {
+            letter-spacing: normal;
+        }
+    }
+
+    &-tertiary {
+        font-size: 1.4em;
+        letter-spacing: .2em;
+    }
+}
+
+.par {
+    font-size: 1.85em;
+    line-height: 1.2;
 }

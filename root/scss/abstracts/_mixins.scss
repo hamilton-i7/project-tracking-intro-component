@@ -1,1 +1,6 @@
 //? Reusable styles
+@mixin centralizeColumn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+}

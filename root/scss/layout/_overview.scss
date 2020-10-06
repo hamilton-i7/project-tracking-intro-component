@@ -1,0 +1,51 @@
+.overview {
+    @include centralizeColumn;  
+    @extend .add-padding;
+    padding-bottom: 5rem;
+}
+
+.box-heading {
+
+    & .heading-secondary {
+        @extend .margin-bottom;
+        
+
+        & span {
+            background-color: $color-neutral-1;
+            border-radius: 2rem;
+            color: $color-white;
+            margin-right: .5rem;
+            padding: .35rem 1rem;
+        }
+    }
+
+    & .heading-primary {
+        @extend .margin-bottom;
+        color: $color-neutral-1;        
+    }
+}
+
+.box-description {
+
+    & .par {
+        margin-bottom: 2rem;
+    }
+
+    & .cta-container {
+        align-items: center;
+        display: flex;
+
+        & .button {
+            margin-right: 1.5rem;
+        }
+
+        & .heading-tertiary {
+
+        }
+    }
+}
+
+.heading-secondary,
+.heading-tertiary {
+    color: $color-neutral-3;
+}

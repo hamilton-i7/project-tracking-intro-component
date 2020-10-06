@@ -1,3 +1,12 @@
+.add-padding, .navigation, .overview {
+  padding: 8% 10%;
+  padding-bottom: 0;
+}
+
+.margin-bottom, .box-heading .heading-secondary, .box-heading .heading-primary {
+  margin-bottom: 1.8rem;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -10,13 +19,150 @@ html {
 }
 
 body {
-  background-color: color("neutral-1");
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #5b5f71;
 }
 
 body {
   font-family: "Barlow", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 400;
+}
+
+.heading, .heading-primary, .heading-secondary, .heading-tertiary {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.heading-primary {
+  font-size: 3.8em;
+  line-height: 1;
+}
+
+.heading-secondary, .heading-tertiary {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.heading-secondary {
+  font-size: 1.6em;
+  letter-spacing: .3em;
+}
+
+.heading-secondary span {
+  letter-spacing: normal;
+}
+
+.heading-tertiary {
+  font-size: 1.4em;
+  letter-spacing: .2em;
+}
+
+.par {
+  font-size: 1.85em;
+  line-height: 1.2;
+}
+
+.button {
+  background-color: #ff5c5c;
+  border: none;
+  border-radius: .5rem;
+  color: #f7f7f7;
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  outline: none;
+  padding: 1.2rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.header {
+  height: 43.4rem;
+  position: relative;
+}
+
+.header .img {
+  display: inline-block;
+  position: absolute;
+  right: -39%;
+  top: 54%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 135%;
+}
+
+.navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.navigation .logo {
+  width: 7%;
+}
+
+.navigation .nav-icon {
+  width: 8%;
+}
+
+.navigation .links-container {
+  display: none;
+  position: absolute;
+}
+
+.overview {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+.box-heading .heading-secondary span {
+  background-color: #242942;
+  border-radius: 2rem;
+  color: #f7f7f7;
+  margin-right: .5rem;
+  padding: .35rem 1rem;
+}
+
+.box-heading .heading-primary {
+  color: #242942;
+}
+
+.box-description .par {
+  margin-bottom: 2rem;
+}
+
+.box-description .cta-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-description .cta-container .button {
+  margin-right: 1.5rem;
+}
+
+.heading-secondary, .heading-tertiary {
+  color: #a0a1ac;
 }
