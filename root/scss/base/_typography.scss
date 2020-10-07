@@ -2,6 +2,10 @@ body {
     font-family: $font-body;
     font-size: 1rem;
     font-weight: 400;
+
+    @media only screen and (max-width: 352px) {
+        font-size: .8rem;
+    }
 }
 
 .heading {

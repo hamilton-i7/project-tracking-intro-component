@@ -1,23 +1,28 @@
 .header {
-    height: 43.4rem;
+    @extend .add-padding;
+    @extend .min-width;
+    display: grid;
+    grid-template-rows: max-content;
+    height: 148vw;
+    max-height: 600px;
+    min-height: 400px;
+    overflow: hidden;
     position: relative;
 
     & .img {
+        align-self: center;
         display: inline-block;
-        position: absolute;
-        right: -39%;
-        top: 54%;
-        transform: translateY(-50%);
-        width: 135%;
+        left: -7%;
+        max-width: 640px;
+        position: relative;
+        width: 155%;
     }
 }
 
 .navigation {
-    @extend .add-padding;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    position: relative;
 
     & .logo {
         width: 7%;        
@@ -28,13 +33,41 @@
     }
 
     & .links-container {
-        display: none;
+        background-color: $color-white;
+        box-shadow: .3rem .5rem 1.5rem rgba($color-neutral-1, .3);
+        color: $color-neutral-1;
+        left: 50%;
+        padding: 2.5rem;
         position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        z-index: 1;
     
         & .links-items {
-            
+            display: grid;
+            list-style: none;
+            row-gap: 2.5rem;
+
             & .item {
-    
+                text-align: center;
+                width: 100%;
+            }
+
+            & .item:last-child {
+                color: $color-neutral-3;
+                padding-top: 2.5rem;
+                position: relative;
+
+                &::after {
+                    border-top: .1rem solid rgba($color-neutral-3, .3);
+                    content: "";
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
             }
         }
     }

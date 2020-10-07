@@ -1,6 +1,7 @@
 .overview {
     @include centralizeColumn;  
     @extend .add-padding;
+    @extend .min-width;
     padding-bottom: 5rem;
 }
 
