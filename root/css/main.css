@@ -157,6 +157,7 @@ body {
 }
 
 .navigation .nav-icon {
+  cursor: pointer;
   width: 8%;
 }
 
