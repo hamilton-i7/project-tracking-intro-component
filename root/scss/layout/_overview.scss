@@ -2,6 +2,7 @@
     @include centralizeColumn;  
     @extend .add-padding;
     @extend .min-width;
+    align-items: flex-start;
     padding-bottom: 5rem;
 }
 

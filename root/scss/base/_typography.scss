@@ -1,6 +1,5 @@
 body {
     font-family: $font-body;
-    font-size: 1rem;
     font-weight: 400;
 
     @media only screen and (max-width: 352px) {
@@ -28,6 +27,7 @@ body {
     &-secondary {
         font-size: 1.6em;
         letter-spacing: .3em;
+        line-height: 1.5;
 
         & span {
             letter-spacing: normal;
@@ -43,4 +43,12 @@ body {
 .par {
     font-size: 1.85em;
     line-height: 1.2;
+}
+
+.overview {
+    font-size: 1rem;
+
+    @media only screen and (min-width: 640px) {
+        font-size: 1.05rem;
+    }
 }
