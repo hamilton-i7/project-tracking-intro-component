@@ -3,7 +3,7 @@
     @extend .min-width;
     display: grid;
     grid-template-rows: max-content;
-    height: 148vw;
+    height: 122vw;
     max-height: 600px;
     min-height: 400px;
     overflow: hidden;
@@ -83,7 +83,7 @@
         width: 80%;
         z-index: 1;
 
-        @media only screen and (min-width: 560px) and (min-height: 667px) {
+        @media only screen and (min-width: 475px) {
             width: 70%;
         }
     

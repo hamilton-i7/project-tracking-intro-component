@@ -150,7 +150,7 @@ body {
   -ms-grid-rows: max-content;
       grid-template-rows: -webkit-max-content;
       grid-template-rows: max-content;
-  height: 148vw;
+  height: 122vw;
   max-height: 600px;
   min-height: 400px;
   overflow: hidden;
@@ -260,7 +260,7 @@ body {
   z-index: 1;
 }
 
-@media only screen and (min-width: 560px) and (min-height: 667px) {
+@media only screen and (min-width: 475px) {
   .navigation .links-container {
     width: 70%;
   }
